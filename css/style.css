@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #4cc9f0;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #a5a5a5;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #3a3a5a;
+    border-radius: 5px;
+    background-color: #0f3460;
+    color: #e6e6e6;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+.file-upload {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4cc9f0;
+    color: #1a1a2e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-upload label:hover {
+    background-color: #48b5e9;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.build-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4cc9f0;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.build-btn:hover {
+    background-color: #48b5e9;
+}
+
+.build-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.chat-trend, .project-viewer {
+    flex: 1;
+    background-color: #16213e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header, .viewer-header {
+    padding: 15px;
+    background-color: #0f3460;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #3a3a5a;
+}
+
+.chat-messages {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0f3460;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.viewer-content {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #0f3460;
+}
+
+.file-tree {
+    list-style: none;
+}
+
+.file-tree li {
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.file-tree li:hover {
+    background-color: #16213e;
+}
+
+.file-tree li.folder {
+    font-weight: bold;
+    color: #4cc9f0;
+}
+
+.file-tree li.file {
+    padding-left: 20px;
+}
+
+.code-display {
+    background-color: #1a1a2e;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    overflow-x: auto;
+    color: #e6e6e6;
+    user-select: none;
+}
+
+.status-message {
+    text-align: center;
+    padding: 20px;
+    color: #a5a5a5;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #0f3460;
+    border-top: 1px solid #3a3a5a;
+}
+
+.run-btn, .github-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.run-btn {
+    background-color: #4cc9f0;
+    color: #1a1a2e;
+}
+
+.run-btn:hover {
+    background-color: #48b5e9;
+}
+
+.github-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.github-btn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .build-container {
+        flex-direction: column;
+    }
+    
+    .chat-messages, .viewer-content {
+        height: 300px;
+    }
+}
