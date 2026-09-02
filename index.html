@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend AI Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Trend AI Builder</h1>
+            <p>هو نموذج ذكي يبني مواقع أو تطبيقات كاملة بناءً على وصفك</p>
+        </div>
+        
+        <div class="input-section">
+            <textarea id="projectDescription" placeholder="أدخل وصف المشروع هنا..."></textarea>
+            <div class="file-upload">
+                <label for="fileInput">
+                    <i class="fas fa-plus"></i> رفع ملف (اختياري)
+                </label>
+                <input type="file" id="fileInput">
+            </div>
+            <button id="startBuild" class="build-btn">ابدأ البناء</button>
+        </div>
+    </div>
+    
+    <div class="build-container" id="buildContainer" style="display: none;">
+        <div class="chat-trend">
+            <div class="chat-header">Chat Trend</div>
+            <div class="chat-messages" id="chatMessages"></div>
+        </div>
+        
+        <div class="project-viewer">
+            <div class="viewer-header">عرض المشروع</div>
+            <div class="viewer-content" id="viewerContent">
+                <div class="status-message">جارٍ تجهيز خارطة الرفع...</div>
+            </div>
+            <div class="project-actions">
+                <button id="runProject" class="run-btn" disabled>تشغيل المشروع</button>
+                <button id="githubLink" class="github-btn" disabled>رابط GitHub</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
